@@ -37,6 +37,8 @@ public class LoginTests {
         Assert.assertEquals(driver.getTitle(), "Web Orders");
     }
 
+    //---------------------------
+
     @Test
     public void logOutTest(){
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");
