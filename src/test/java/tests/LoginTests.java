@@ -11,14 +11,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class LoginTests {
-
     //Login tests are maintain here
     //without Page object approach
-
     WebDriver driver;
+    Map<String,String> myMap = new HashMap<>();
 
     @BeforeMethod
     public void setUp() {
@@ -37,7 +38,7 @@ public class LoginTests {
         Assert.assertEquals(driver.getTitle(), "Web Orders");
     }
 
-    //---------------------------
+
 
     @Test
     public void logOutTest(){
