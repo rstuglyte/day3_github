@@ -19,5 +19,7 @@ target/
 log/
 target/
 
-# Some New Changes
-SomeFolder/
+
+#some changes
+SomeFile/
+
